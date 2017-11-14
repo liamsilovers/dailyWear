@@ -1,0 +1,39 @@
+.view-color
+{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../img/bg.png");
+  .heading-view
+  {
+  }
+  .group-color
+  {
+    margin-bottom: 15px;
+    &:last-child
+    {
+      margin-bottom: 0px;
+    }
+    .item-color
+    {
+      width: 65px;
+      height: 65px;
+      display: block;
+      margin:0px auto;
+      @include border-radius(50%);
+      @include transition(all 0.3s ease-in-out);
+      &.activated
+      {
+        @include transform(scale(1.25));
+      }
+      &.not-selected
+      {
+        -webkit-opacity: 0.5;
+        -moz-opacity: 0.5;
+        -ms-opacity: 0.5;
+        -o-opacity: 0.5;
+        opacity : 0.5;
+      }
+    }
+  }
+}

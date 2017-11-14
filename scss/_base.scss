@@ -1,0 +1,162 @@
+// variables
+
+$pd-md : 15;
+$colorApp : #f8f8f8;
+$black: #292929;
+$white: #FFFFFF;
+
+.white
+{
+  color: $white !important;
+}
+
+.bar .button-positive, .bar .button-positive.activated, .bar .button-positive:active, .bar .button-positive:hover, .bar-positive, .bar-positive.activated, .bar-positive:active, .bar-positive:hover, .button-bar-positive, .button-bar-positive.activated, .button-bar-positive:active, .button-bar-positive:hover, .button-positive, .button-positive.activated, .button-positive:active, .button-positive:hover, .header-positive, .header-positive.activated, .header-positive:active, .header-positive:hover, .positive-bg, .positive-bg.activated, .positive-bg:active, .positive-bg:hover, .positive-border, .positive-border.activated, .positive-border:active, .positive-border:hover
+{
+  background-color: #000;
+}
+
+*
+{
+  padding: 0px; margin: 0px;
+  font-family: Open Sans, sans-serif;
+}
+
+.bar.bar-header .button + .title
+{
+  font-weight: normal
+}
+
+.not-padding
+{
+  padding : 0px !important;
+}
+.not-padding-lr
+{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.not-margin
+{
+  margin:0px !important;
+}
+.not-border
+{
+  border: none !important;
+}
+.t-3
+{
+  @include transition(all 0.3s);
+}
+.horizontal-center
+{
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-direction: normal;
+   -moz-box-direction: normal;
+   -webkit-box-orient: horizontal;
+   -moz-box-orient: horizontal;
+   -webkit-flex-direction: row;
+   -ms-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   -ms-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-box-pack: center;
+   -moz-box-pack: center;
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-align-content: stretch;
+   -ms-flex-line-pack: stretch;
+   align-content: stretch;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+ion-content
+{
+  &.has-header
+  {
+    top: 44px;
+  }
+  .scroll
+  {
+    width : 100% ;
+  }
+  &.not-has-header
+  {
+    top : 0px;
+  }
+}
+
+.bg-gradient
+{
+ /* background: -moz-linear-gradient(top, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.90) 0%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.90) 0%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );*/
+
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.80) 0%,rgba(0,0,0,0.45) 60%,rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.80) 0%,rgba(0,0,0,0.45) 60%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=0 );
+}
+
+a:hover,a:active,a:focus
+{
+  text-decoration: none !important;
+}
+
+.bar.bar-header .button + .title
+{
+  text-align: left;
+  padding-right: 36px;
+}
+
+.heading-title
+{
+  font-weight: normal;
+  color: #FFF;
+  padding: 20px 15px 25px 15px;
+  font-size: 21px;
+  @extend .t-3;
+  @extend .bg-gradient;
+}
+
+.heading-view
+{
+  color: $positive;
+  font-weight: 100;
+  text-align: center;
+  font-size: 15px;
+  padding: 0px;
+  letter-spacing: 0.5px;
+}
+.common-background
+{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../img/bg.png");
+}
+.title-action-sheet
+{
+  color: $positive;
+  text-transform: uppercase;
+}
+.btn-action-sheet
+{
+  padding-left: 15px;
+  color: #333;
+  font-weight: normal;
+}
+.hide
+{
+  display: none;
+}

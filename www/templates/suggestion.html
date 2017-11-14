@@ -1,0 +1,19 @@
+<ion-view view-title="Nous vous suggérons" name="categories-vetements" class="categories-vetements">
+  <ion-content class="has-sub-header padding horizontal-center">
+  	<div class="card">
+      <div class="item item-text-wrap">
+        <h1 class="heading-view">Veuillez choisir parmi les styles suivant</h1>
+      </div>
+      <div class="item item-text-wrap not-padding-lr">
+      	<ion-list>
+		  <ion-radio ng-model="categorie.style" ng-value="'Business'">Business</ion-radio>
+		  <ion-radio ng-model="categorie.style" ng-value="'Casual décontracté'">Casual décontracté</ion-radio>
+		  <ion-radio ng-model="categorie.style" ng-value="'Casual classe'">Casual classe</ion-radio>
+		</ion-list>
+      </div>
+      <div class="item item-text-wrap">
+      	<button type="button" class="button button-full button-positive ink" ng-click="next()"><span class="ion-arrow-right-c"></span>&nbsp;Suivant</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

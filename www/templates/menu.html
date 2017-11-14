@@ -1,0 +1,38 @@
+<ion-view view-title="Menu de DailyWear" name="menu" class="view-menu">
+  <ion-content class="has-sub-header">
+    <!-- <div class="row">
+      <div class="col">
+        <button type="button" class="button button-full button-positive ink" ui-sref="categoriesVetements">Ajouter des vêtements</button>
+        <button type="button" class="button button-full button-positive ink">Me suggérer une tenue</button>
+        <button type="button" class="button button-full button-positive ink" ui-sref="showroom">Showroom</button>
+        <button type="button" class="button button-full button-positive ink">Paramètre</button>
+      </div>
+    </div> -->
+    <div class="list card list-menu">
+      <a class="item item-icon-left item-menu" ui-sref="categoriesVetements">
+        <div class="item-menu-icon">
+          <img ng-src="img/icons/clothes.png">
+        </div>
+        <span class="item-menu-text">Ajouter des vêtements</span>
+      </a>
+      <a class="item item-icon-left item-menu" ui-sref="suggestion">
+        <div class="item-menu-icon">
+          <img ng-src="img/icons/cothes_idea.png">
+        </div>
+        <span class="item-menu-text">Me suggérer une tenue</span>
+      </a>
+      <a class="item item-icon-left item-menu" ui-sref="showroom">
+        <div class="item-menu-icon">
+          <img ng-src="img/icons/showroom.png">
+        </div>
+        <span class="item-menu-text">Showroom</span>
+      </a>
+      <a class="item item-icon-left item-menu" ui-sref="setting">
+        <div class="item-menu-icon">
+          <img ng-src="img/icons/setting.png">
+        </div>
+        <span class="item-menu-text">Paramètres</span>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

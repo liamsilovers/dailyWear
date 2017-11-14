@@ -1,0 +1,74 @@
+.categories-vetements
+{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../img/bg.png");
+  .list-categories
+  {
+    margin:0px;
+    @include border-radius(0px !important);
+    .item-categories
+    {
+      height: 150px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      @include border-radius(0px !important);
+      .heading-title
+      {
+        text-align: left;
+        font-size: 19px;
+        letter-spacing: 1px;
+      }
+      &.robe
+      {
+        background-image: url("../img/categories/robe.jpg");
+      }
+      &.test
+      {
+        background-image: url("../img/categories/profile-bg.jpg");
+      }
+      &.jeans
+      {
+        background-image: url("../img/categories/jeans-man.jpg");
+      }
+      &.t-shirt
+      {
+        background-image: url("../img/categories/t-shirt.jpg");
+      }
+      &.polos
+      {
+        background-image: url("../img/categories/polos.jpg");
+      }
+      &.chemises
+      {
+        background-image: url("../img/categories/chemises.jpg");
+      }
+      &.pulls
+      {
+        background-image: url("../img/categories/pulls.jpg");
+      }
+      &.pantalons
+      {
+        background-image: url("../img/categories/pantalons.jpg");
+      }
+      &.vestes
+      {
+        background-image: url("../img/categories/vestes.jpg");
+      }
+      &.manteaux
+      {
+        background-image: url("../img/categories/manteaux.jpg");
+      }
+      &.costumes
+      {
+        background-image: url("../img/categories/costumes.jpg");
+      }
+      &.cravates
+      {
+        background-image: url("../img/categories/cravates.jpg"); 
+      }
+    }
+  }
+}

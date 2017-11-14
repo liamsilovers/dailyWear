@@ -1,0 +1,19 @@
+<ion-view view-title="DAILY WEAR" name="checkSexe" class="check-sexe">
+  <ion-content class="padding not-has-header horizontal-center">
+    <div class="row">
+      <div class="col logo">
+        <img src="img/logo.jpg" alt="">
+      </div>
+    </div>
+    <h1 class="heading">Êtes vous:</h1>
+    <div class="row row-sexe">
+      <div class="col item-sexe">
+        <span class="cover-sexe man" data-sexe="man" ng-click="selected($event);"></span>
+      </div>
+      <div class="col item-sexe">
+        <span class="cover-sexe woman" data-sexe="woman" ng-click="selected($event);"></span>
+      </div>
+    </div>
+    <button type="button" class="button button-full button-positive ink" ng-click="next()"><span class="ion-android-done"></span>&nbsp;Suivant</button>
+  </ion-content>
+</ion-view>

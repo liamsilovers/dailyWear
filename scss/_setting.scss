@@ -1,0 +1,21 @@
+.view-parametre
+{
+	background-color: $colorApp;
+	.heading
+	{
+	    text-align: center;
+	    font-size: 13px;
+	    line-height: 25px;
+	    color: $black;
+	    margin-bottom: 7.5px;
+	}
+	.ion-male
+	{
+		color: #11c1f3;
+	}
+	.ion-female
+	{
+		color: #fb59d7;
+		font-size: 18px;
+	}
+}

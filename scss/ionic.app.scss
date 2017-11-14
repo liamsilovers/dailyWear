@@ -1,0 +1,59 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+$positive: #111 !default;
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+@mixin declare-font-face($font-face-family, $font-face-filename, $font-face-weight : normal, $font-face-style :normal) {
+  @font-face {
+    font-family: '#{$font-face-family}';
+    src: url(('#{$font-face-filename}.eot'));
+    src: url(('#{$font-face-filename}.eot?#iefix')) format('embedded-opentype'),
+    url(('#{$font-face-filename}.woff')) format('woff'),
+    url(('#{$font-face-filename}.ttf')) format('truetype'),
+    url(('#{$font-face-filename}.svg##{$font-face-family}')) format('svg');
+    font-weight: $font-face-weight;
+    font-style: $font-face-style;
+  }
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../lib/ionic/fonts/OpenSans-Regular.ttf') format('ttf'),
+        url('../lib/ionic/fonts/OpenSans-Bold.ttf') format('ttf'),
+        url('../lib/ionic/fonts/OpenSans-ExtraBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+//@include declare-font-face("Open Sans", font-files($ionicons-font-path+"/OpenSans-Regular.ttf",$ionicons-font-path+"/OpenSans-Bold.ttf",$ionicons-font-path+"/OpenSans-ExtraBold.ttf",$ionicons-font-path+"/OpenSans-Semibold.ttf"));
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+//@import "scss/_ionic.material.min";
+@import "scss/_base";
+@import "scss/_check_sexe";
+@import "scss/_categories_vetements";
+@import "scss/_color";
+@import "scss/_showroom";
+@import "scss/_menu";
+@import "scss/_setting";
+@import "scss/_suggestion";

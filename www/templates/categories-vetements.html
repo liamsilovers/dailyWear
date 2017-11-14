@@ -1,0 +1,108 @@
+<ion-view view-title="Catégories" name="categories-vetements" class="categories-vetements">
+  <ion-content class="has-sub-header">
+    <div class="card not-margin">
+      <div class="item item-text-wrap">
+        <h1 class="heading-view">Veuillez choisir une catégorie</h1>
+      </div>
+    </div>
+    <div ng-show="user.sexe == 'woman'">
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Robes" class="item item-image item-categories robe">
+            <h2 class="heading-title">Robes</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Tops & T-shirts" class="item item-image item-categories test">
+            <h2 class="heading-title">Tops & T-shirts</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Chemisiers & Tuniques" class="item item-image item-categories robe">
+            <h2 class="heading-title">Chemisiers & Tuniques</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Pulls & Gillets" class="item item-image item-categories robe">
+            <h2 class="heading-title">Pulls & Gillets</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Pantalons & Leggings" class="item item-image item-categories robe">
+            <h2 class="heading-title">Pantalons & Leggings</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Jupes" class="item item-image item-categories robe">
+            <h2 class="heading-title">Jupes</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Jeans" class="item item-image item-categories robe">
+            <h2 class="heading-title">Jeans</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Vestes" class="item item-image item-categories robe">
+            <h2 class="heading-title">Vestes</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Manteaux" class="item item-image item-categories robe">
+            <h2 class="heading-title">Manteaux</h2>
+        </div>
+      </div>
+    </div>
+    <div ng-show="user.sexe == 'man'">
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="T-shirts" class="item item-image item-categories t-shirt">
+            <h2 class="heading-title">T-shirts</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Polos" class="item item-image item-categories polos">
+            <h2 class="heading-title">Polos</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Chemises" class="item item-image item-categories chemises">
+            <h2 class="heading-title">Chemises</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Pulls" class="item item-image item-categories pulls">
+            <h2 class="heading-title">Pulls</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Jeans" class="item item-image item-categories jeans">
+            <h2 class="heading-title">Jeans</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Pantalons" class="item item-image item-categories pantalons">
+            <h2 class="heading-title">Pantalons / Shorts</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Vestes" class="item item-image item-categories vestes">
+            <h2 class="heading-title">Vestes</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Manteaux" class="item item-image item-categories manteaux">
+            <h2 class="heading-title">Manteaux</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Costumes" class="item item-image item-categories costumes">
+            <h2 class="heading-title">Costumes</h2>
+        </div>
+      </div>
+      <div class="list list-categories card">
+        <div ng-click="selectCategorie($event)" data-categorie="Cravates" class="item item-image item-categories cravates">
+            <h2 class="heading-title">Cravates</h2>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

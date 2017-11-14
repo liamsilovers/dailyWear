@@ -1,0 +1,61 @@
+.view-showroom,.view-suggestion-detail
+{
+  .card-showroom,.card-suggestion
+  {
+    .item-divider
+    {
+      background: #f8f8f8;
+      line-height: 32px;
+      font-size: 15px;
+      padding-left: 25px;
+/*      color: #333;*/
+    }
+    img
+    {
+      width: 285px;
+      height: 285px;
+      display: block;
+      padding: 3px;
+      border:1px solid #e5e5e5;
+      margin: 0px auto;
+      @include border-radius(0%);
+    }
+    .cover-image
+    {
+      width: 100%;
+      height: 256px;
+      line-height: 30px;
+      text-align: center;
+      position: absolute;
+      left: 0px;
+      top: 27px;
+      @include border-radius(0%);
+      i
+      {
+        font-size: 120px;
+        color: $colorApp;
+        line-height: 275px;
+      }
+    }
+    .upload-image
+    {
+      width: 50px;
+      height: 50px;
+      line-height: 48px;
+      margin-top: 15px;
+      border:1px solid #000;
+      text-align: center;
+      color: #FFF;
+      background-color: $positive;
+      font-size: 22px;
+      @include border-radius(0%);
+      @extend .t-3;
+    }
+  }
+  .ion-android-upload
+  {
+    font-size: 21px;
+    position: relative;
+    top: 2px;
+  }
+}

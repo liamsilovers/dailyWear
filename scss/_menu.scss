@@ -1,0 +1,39 @@
+.view-menu
+{
+	.list-menu
+	{
+		.item-menu
+		{
+/*			padding-top: 30px;
+			padding-bottom: 30px;*/
+			padding-left: 15px;
+			.item-menu-icon
+			{
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				padding: 7.5px;
+				border:1px solid #000;
+				background-color: $positive;
+				display: inline-block;
+				@include border-radius(50%);
+				img
+				{
+					width: 100%;
+					display: block;
+				}
+			}
+			.item-menu-text
+			{
+				display: inline-block;
+			    vertical-align: top;
+    			padding-top: 22px;
+    			padding-left: 7.5px;
+    			font-weight: 100;
+    			font-size: 18px;
+    			color: $positive;
+			}
+		}
+	}
+}

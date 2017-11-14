@@ -1,0 +1,57 @@
+.check-sexe
+{
+  /*background-image:url("../img/app_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+  background-color: $colorApp;
+  .logo
+  {
+    img
+    {
+      display: block;
+      margin: 0px auto;
+    }
+  }
+  .heading
+  {
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+    color: $black;
+  }
+  .row-sexe
+  {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    .item-sexe
+    {
+      text-align: center;
+      .cover-sexe
+      {
+        display: block;
+        width: 120px;
+        height: 120px;
+        border:3px solid #cecece;
+        margin:0px auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        @include border-radius(50%);
+        @extend .t-3;
+        &.selected
+        {
+          border:3px solid $positive;
+        }
+        &.man
+        {
+          background-image: url("../img/man_model.jpg");
+        }
+        &.woman
+        {
+          background-image: url("../img/woman_model.jpg");
+        }
+      }
+    }
+  }
+}
